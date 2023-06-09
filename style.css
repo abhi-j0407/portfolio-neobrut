@@ -268,7 +268,7 @@
         height: 80%;
         width: 80%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         border: 3px solid black;
         background-image: url(images/subtle_dots.webp);
         border-radius: 40px;
@@ -327,6 +327,30 @@
 
           > .tailwind {
             background-color: #06b6d4;
+          }
+
+          > .bootstrap {
+            background-color: #7952b3;
+          }
+
+          > .sql {
+            background-color: #00546B;
+          }
+
+          > .mongodb {
+            background-color: #01EC64;
+          }
+
+          > .git {
+            background-color: #DE4C36;
+          }
+
+          > .bitbucket {
+            background-color: white;
+          }
+
+          > .node {
+            background-color: #8CC84B;
           }
 
           > .skill-title {
