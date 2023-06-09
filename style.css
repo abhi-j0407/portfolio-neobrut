@@ -388,14 +388,12 @@ h6 {
   .work-main {
     height: 80%;
     width: 90%;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10%;
 
     .work-title {
-      border: 1px solid grey;
       font-size: 45px;
     }
 
@@ -413,7 +411,7 @@ h6 {
         gap: 10%;
         padding: 20px;
         border: 3px solid black;
-        box-shadow: -10px 10px 0 0 black;
+        transition: all 0.2s;
 
         .header {
           display: flex;
@@ -422,11 +420,11 @@ h6 {
           .logo {
             height: 80px;
             aspect-ratio: 1;
-            background-color: var(--light-yellow);
+            background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: -4px 4px 0 0 var(--light-orange);
+            transition: all 0.2s;
 
             .logo-img {
               aspect-ratio: 1;
@@ -449,11 +447,17 @@ h6 {
           border: 1px solid lawngreen;
         }
       }
-  
-      .cognizant-container {
-        width: 50%;
-        height: 90%;
-        border: 1px solid purple;
+
+      .company-container:hover {
+        background-color: var(--light-yellow);
+        box-shadow: -10px 10px 0 0 var(--blue);
+        transform: translateY(-5px) translateX(5px);
+
+        .logo {
+          background-color: white;
+          box-shadow: -4px 4px 0 0 var(--light-orange);
+          transform: translateY(-2px) translateX(2px);
+        }
       }
     }
   } 
