@@ -1,63 +1,77 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@500;600&display=swap");
 
 /* CSS Resets */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-  }
-  html, body {
-    height: 100%;
-  }
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  input, button, textarea, select {
-    font: inherit;
-  }
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
 
-  /* Styles*/
+/* Styles*/
 
-  :root {
-    --light-beige: #FDFCE5;
-    --blue: #387ADF;
-    --light-yellow: #FFC55C;
-    --dark-orange: #E86A33;
-    --light-orange: #FF8B13
+:root {
+  --light-beige: #fdfce5;
+  --blue: #387adf;
+  --light-yellow: #ffc55c;
+  --dark-orange: #e86a33;
+  --light-orange: #ff8b13;
+}
 
-  }
+.hover-trans {
+  transition: all 0.2s;
+}
 
-  .hover-trans {
-    transition: all 0.2s;
-  }
+.main {
+  border: 3px solid black;
+  font-family: "Public Sans", sans-serif;
+  background-color: var(--light-beige);
+}
 
-  .main {
-    border: 3px solid black;
-    font-family: 'Public Sans', sans-serif;
-    background-color: var(--light-beige);
-  }
+.navbar {
+  display: flex;
+  border-bottom: 3px solid black;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
 
-  .navbar {
-    display: flex;
-    border-bottom: 3px solid black;
-    height: 50px;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
+  > .logo {
     text-decoration: none;
     color: inherit;
     font-size: 28px;
@@ -72,7 +86,7 @@
     background-color: var(--blue);
   }
 
-  .logo:hover {
+  > .logo:hover {
     color: white;
   }
 
@@ -91,23 +105,22 @@
     align-items: center;
     border-left: 3px solid black;
 
-
     > a {
-        text-decoration: none;
-        color: inherit;
-        font-weight: 500;
-        font-size: 18px;
-        border-right: 3px solid black;
-        display: flex;
-        height: 100%;
-        align-items: center;
-        padding-inline: 30px;
-        cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      font-weight: 500;
+      font-size: 18px;
+      border-right: 3px solid black;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      padding-inline: 30px;
+      cursor: pointer;
     }
 
     > a:hover {
-        background-color: var(--dark-orange);
-        color: white;
+      background-color: var(--dark-orange);
+      color: white;
     }
   }
 
@@ -131,82 +144,81 @@
   .cv-btn:hover {
     background-color: var(--dark-orange);
   }
+}
 
-  .hero {
-    height: calc(100vh - 50px);
+.hero {
+  height: calc(100vh - 50px);
+  display: flex;
+
+  > .left {
+    width: 55%;
     display: flex;
-    
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 50px;
 
-    > .left {
-        width: 55%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-inline: 50px;
-
-        > p {
-            font-size: 25px;
-            line-height: 1;
-            font-weight: bold;
-        }
-
-        > .hero-name {
-            font-size: 75px;
-            line-height: 1.25;
-        }
-
-        > .hero-sub {
-            font-size: 50px;
-            line-height: 1;
-        }
-
-        > .hero-desc {
-            font-size: 20px;
-            line-height: 1.25;
-            margin-top: 20px;
-            width: 700px;
-            font-weight: normal;
-        }
+    > p {
+      font-size: 25px;
+      line-height: 1;
+      font-weight: bold;
     }
 
-    > .right {
-        display: flex;
-        align-items: center;
+    > .hero-name {
+      font-size: 75px;
+      line-height: 1.25;
+    }
 
-        > .grid {
-            background-size: 50px 50px;
-            height: 500px;
-            width: 500px;
-            border: 2px solid black;
-            box-shadow: -10px 10px 0px 0px black;
-            background-image: url(/images/dot-grid.webp);
-            background-size: cover;
-          }
+    > .hero-sub {
+      font-size: 50px;
+      line-height: 1;
+    }
+
+    > .hero-desc {
+      font-size: 20px;
+      line-height: 1.25;
+      margin-top: 20px;
+      width: 700px;
+      font-weight: normal;
     }
   }
 
-  #about {
-    border-block: 3px solid black;
-    height: 100vh;
+  > .right {
     display: flex;
+    align-items: center;
 
-    >.left {
-      width: 55%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-right: 3px solid black;
+    > .grid {
+      background-size: 50px 50px;
+      height: 500px;
+      width: 500px;
+      border: 2px solid black;
+      box-shadow: -10px 10px 0px 0px black;
       background-image: url(/images/dot-grid.webp);
+      background-size: cover;
     }
+  }
+}
 
-    >.right {
-      width: 45%;
-      background-color: var(--light-yellow);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+#about {
+  border-block: 3px solid black;
+  height: 100vh;
+  display: flex;
+
+  > .left {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid black;
+    background-image: url(/images/dot-grid.webp);
+  }
+
+  > .right {
+    width: 45%;
+    background-color: var(--light-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .about-main {
@@ -221,148 +233,228 @@
     gap: 30px;
     background-color: var(--light-beige);
   }
-
+  
   .about-desc {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-
+  
   .about-img {
     border: 3px solid black;
     height: 500px;
     width: 60%;
   }
+}
 
-  #skills {
-    height: 100vh;
-    border-bottom: 3px solid black;
+#skills {
+  height: 100vh;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > .skills-main {
+    height: 80%;
+    width: 90%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
     align-items: center;
 
-    > .skills-main {
-      height: 80%;
-      width: 90%;
+    > .title {
       display: flex;
       flex-direction: column;
-      gap: 40px;
       align-items: center;
+      justify-content: center;
 
-      > .title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        > .skills-title {
-          font-size: 50px;
-        }
-
-        > .skills-subtitle {
-          font-size: 14px;
-        }
+      > .skills-title {
+        font-size: 50px;
       }
 
-      > .skills-container {
-        height: 80%;
-        width: 80%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      > .skills-subtitle {
+        font-size: 14px;
+      }
+    }
+
+    > .skills-container {
+      height: 80%;
+      width: 80%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      border: 3px solid black;
+      background-image: url(images/subtle_dots.webp);
+      border-radius: 40px;
+      box-shadow: 10px 10px 0 0 black;
+      justify-content: center;
+
+      > .skill {
         border: 3px solid black;
-        background-image: url(images/subtle_dots.webp);
-        border-radius: 40px;
-        box-shadow: 10px 10px 0 0 black;
-        justify-content: center;
+        box-shadow: 5px 5px 0 0 black;
+        overflow: hidden;
+        width: 120px;
+        aspect-ratio: 1;
+        border-radius: 10px;
+        margin: auto;
 
-        > .skill {
-          border: 3px solid black;
-          box-shadow: 5px 5px 0 0 black;
-          overflow: hidden;
-          width: 120px;
-          aspect-ratio: 1;
-          border-radius: 10px;
-          margin: auto;
+        > .skill-logo {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-          > .skill-logo {
-            width: 100%;
-            height: 100%;
+          > img {
+            height: 85%;
+            width: 85%;
+          }
+        }
+
+        > .html {
+          background-color: #f79540;
+        }
+
+        > .css {
+          background-color: var(--blue);
+        }
+
+        > .react {
+          background-color: #00d8ff;
+        }
+
+        > .next {
+          background-color: white;
+        }
+
+        > .redux {
+          background-color: #764abc;
+        }
+
+        > .astro {
+          background-color: #f97b22;
+        }
+
+        > .javascript {
+          background-color: #f0db4f;
+        }
+
+        > .tailwind {
+          background-color: #06b6d4;
+        }
+
+        > .bootstrap {
+          background-color: #7952b3;
+        }
+
+        > .sql {
+          background-color: #00546b;
+        }
+
+        > .mongodb {
+          background-color: #01ec64;
+        }
+
+        > .git {
+          background-color: #de4c36;
+        }
+
+        > .bitbucket {
+          background-color: white;
+        }
+
+        > .node {
+          background-color: #8cc84b;
+        }
+
+        > .skill-title {
+          height: 20%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--blue);
+        }
+      }
+    }
+  }
+}
+
+#work {
+  border-block: 3px solid black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .work-main {
+    height: 80%;
+    width: 90%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+
+    .work-title {
+      border: 1px solid grey;
+      font-size: 45px;
+    }
+
+    .exp-main {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: space-between;
+
+      .company-container {
+        width: 47%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        padding: 20px;
+        border: 3px solid black;
+        box-shadow: -10px 10px 0 0 black;
+
+        .header {
+          display: flex;
+          gap: 30px;
+
+          .logo {
+            height: 80px;
+            aspect-ratio: 1;
+            background-color: var(--light-yellow);
             display: flex;
             justify-content: center;
             align-items: center;
+            box-shadow: -4px 4px 0 0 var(--light-orange);
 
-            > img {
-              height: 85%;
-              width: 85%;
+            .logo-img {
+              aspect-ratio: 1;
+              height: 80%;
             }
           }
 
-          > .html {
-            background-color: #F79540;
-          }
-
-          > .css {
-            background-color: var(--blue);
-          }
-          
-          > .react {
-            background-color: #00D8FF;
-          }
-
-          > .next {
-            background-color: white;
-          }
-
-          > .redux {
-            background-color: #764ABC;
-          }
-
-          > .astro {
-            background-color: #F97B22;
-          }
-
-          > .javascript {
-            background-color: #f0db4f;
-          }
-
-          > .tailwind {
-            background-color: #06b6d4;
-          }
-
-          > .bootstrap {
-            background-color: #7952b3;
-          }
-
-          > .sql {
-            background-color: #00546B;
-          }
-
-          > .mongodb {
-            background-color: #01EC64;
-          }
-
-          > .git {
-            background-color: #DE4C36;
-          }
-
-          > .bitbucket {
-            background-color: white;
-          }
-
-          > .node {
-            background-color: #8CC84B;
-          }
-
-          > .skill-title {
-            height: 20%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: var(--blue);
+          .heading {
+            .role {
+              font-size: 18px;
+            }
+            
+            .company {
+              font-size: 28px;
+            }
           }
         }
-      }
-    } 
-  }
 
+        .content {
+          border: 1px solid lawngreen;
+        }
+      }
   
+      .cognizant-container {
+        width: 50%;
+        height: 90%;
+        border: 1px solid purple;
+      }
+    }
+  } 
+}
