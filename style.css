@@ -594,9 +594,17 @@ h6 {
         .social {
           height: 50px;
           aspect-ratio: 1;
-          background-color: #000;
+          background-color: var(--blue);
+          box-shadow: 3px 3px 0 0 black;
           border-radius: 50%;
-          padding: 5px;
+          padding: 10px;
+          transition: all 0.2s;
+
+          &:hover {
+            background-color: var(--dark-orange);
+            box-shadow: 5px 5px 0 0 black;
+            transform: translateY(-5px);
+          }
         }
       }
     }
@@ -1074,11 +1082,25 @@ h6 {
         }
   
         .socials {
-          display: flex;
-          gap: 15px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+          margin-left: 0;
+          gap: 5px;
+          max-width: 300px;
+          padding-block: 5px;
   
           .social {
-            height: 40px;
+            height: 35px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            padding: 5px;
+            margin: auto;
+            transition: all 0.2s;
+  
+            &:hover {
+              background-color: var(--blue);
+              transform: translateY(-5px);
+            }
           }
         }
       }
