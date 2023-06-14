@@ -161,25 +161,26 @@ h6 {
 
     .left-text {
       > p {
-        font-size: 25px;
+        font-size: 30px;
         line-height: 1;
         font-weight: bold;
       }
 
       > .hero-name {
-        font-size: 75px;
+        font-size: 85px;
         line-height: 1.25;
+        margin-top: 15px;
       }
 
       > .hero-sub {
-        font-size: 50px;
+        font-size: 55px;
         line-height: 1;
       }
 
       > .hero-desc {
-        font-size: 20px;
+        font-size: 22px;
         line-height: 1.25;
-        margin-top: 20px;
+        margin-top: 40px;
         width: 700px;
         font-weight: normal;
       }
@@ -200,6 +201,14 @@ h6 {
       box-shadow: -10px 10px 0px 0px black;
       background-image: url(/images/dot-grid.webp);
       background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .hero-illustration {
+        height: 100%;
+
+      }
     }
   }
 }
@@ -208,6 +217,7 @@ h6 {
   border-block: 3px solid black;
   height: 100vh;
   display: flex;
+  flex-direction: row-reverse;
 
   > .left {
     width: 55%;
@@ -215,11 +225,11 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 3px solid black;
+    border-left: 3px solid black;
     background-image: url(/images/dot-grid.webp);
 
     .about-main {
-      width: 80%;
+      width: 90%;
       height: 75%;
       border: 3px solid black;
       box-shadow: 10px 10px 0px 0px black;
@@ -252,8 +262,10 @@ h6 {
 
   .about-img {
     border: 3px solid black;
-    height: 500px;
-    width: 60%;
+    height: 600px;
+    width: 80%;
+    background-image: url(/images/My\ project-2.png);
+    background-size: cover
   }
 }
 
@@ -791,6 +803,7 @@ h6 {
 
         > .hero-name {
           font-size: 40px;
+          margin-top: 0px;
         }
 
         > .hero-sub {
@@ -800,6 +813,7 @@ h6 {
         > .hero-desc {
           font-size: 15px;
           width: 100%;
+          margin-top: 15px;
         }
       }
     }
@@ -839,7 +853,8 @@ h6 {
         border: 2px solid black;
         box-shadow: 5px 5px 0px 0px black;
         border-radius: 25px;
-        padding: 20px;
+        padding-inline: 20px 10px;
+        padding-block: 20px;
         gap: 10px;
 
         > h2 {
@@ -847,7 +862,7 @@ h6 {
         }
 
         .about-desc {
-          font-size: 12px;
+          font-size: 11px;
           gap: 10px;
         }
       }
