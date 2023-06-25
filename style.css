@@ -723,8 +723,9 @@ h6 {
       color: inherit;
       font-size: 18px;
       font-weight: 600;
-      padding: 14px;
-      line-height: 0.5;
+      padding-inline: 14px;
+      padding-block: 10px;
+      line-height: 1.2;
       align-self: center;
       border-right: 2px solid black;
       height: 100%;
@@ -814,7 +815,7 @@ h6 {
         gap: 5px;
         > p {
           font-size: 20px;
-          line-height: 1.1;
+          line-height: 1.25;
         }
 
         > .hero-name {
@@ -824,7 +825,7 @@ h6 {
 
         > .hero-sub {
           font-size: 18px;
-          line-height: 1.1;
+          line-height: 1.25;
         }
 
         > .hero-desc {
