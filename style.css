@@ -226,7 +226,7 @@ h6 {
     justify-content: center;
     align-items: center;
     border-left: 3px solid black;
-    background-image: url(/images/dot-grid.webp);
+    background-image: url(images/dot-grid.webp);
 
     .about-main {
       width: 90%;
@@ -264,7 +264,7 @@ h6 {
     border: 3px solid black;
     height: 600px;
     width: 80%;
-    background-image: url(/images/My\ project-2.png);
+    background-image: url(images/My\ project-2.png);
     background-size: cover
   }
 }
