@@ -371,6 +371,11 @@
                 </div>
                 <div class="contact-right">
                     <form action="https://formsubmit.co/b2f186226afd8a872a3ecf024b614928" method="POST" class="contact-form">
+                        <!-- Honeypot -->
+                        <input type="text" name="_honey" style="display: none;">
+                        <!-- Disable Captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+                        
                         <input type="text" name="name" placeholder="your name" class="row-field">
                         <input type="email" name="email" placeholder="your email" class="row-field">
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="your message"
