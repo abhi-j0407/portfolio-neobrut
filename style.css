@@ -199,7 +199,7 @@ h6 {
       width: 500px;
       border: 2px solid black;
       box-shadow: -10px 10px 0px 0px black;
-      background-image: url(/images/dot-grid.webp);
+      background-image: url(images/dot-grid.webp);
       background-size: cover;
       display: flex;
       justify-content: center;
