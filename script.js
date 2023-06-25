@@ -9,7 +9,7 @@ const observer = new IntersectionObserver(
         })
     },
     {
-        threshold:0.75
+        threshold:0.9
     }
 )
 
