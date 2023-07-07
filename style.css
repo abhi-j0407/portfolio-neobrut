@@ -516,7 +516,7 @@ h6 {
 
 #projects {
   border-bottom: 3px solid black;
-  height: 900px;
+  height: 1100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -535,25 +535,29 @@ h6 {
 
     .projects-container {
       width: 100%;
-      height: 500px;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 5%;
 
       .project {
         border: 3px solid black;
+        background-color: white;
         display: flex;
+        height: 350px;
         flex-direction: column;
         position: relative;
         transition: all 0.2s;
 
         .project-img-container {
           height: 100%;
+          display: flex;
+          align-items: start;
         }
 
         .project-content {
           border-top: 3px solid black;
-          height: 10%;
+          background-color: var(--light-yellow);
+          height: 15%;
           position: absolute;
           width: 100%;
           bottom: 0;
@@ -576,7 +580,8 @@ h6 {
 
             .project-tech {
               display: flex;
-              gap: 30px;
+              flex-direction: column;
+              gap: 5px;
               padding-inline: 5%;
               margin-top: 5%;
             }
@@ -584,7 +589,12 @@ h6 {
         }
 
         .project-content:hover {
-          height: 50%;
+          height: 100%;
+          border-top: none;
+
+          .project-title {
+            margin-top: 20px;
+          }
 
           .project-hidden {
             display: block;
@@ -1090,19 +1100,19 @@ h6 {
         padding: 5px;
   
         .project {
-          height: 250px;
+          height: 220px;
           border: 2px solid black;
   
           .project-content {
             border-top: 2px solid black;
-            height: fit-content;
+            height: 20%;
             bottom: 0;
-            padding: 10px;
+            padding: 5px 15px;
             gap: 20px;
             transition: all 0.5s;
   
             .project-title {
-              font-size: 20px;
+              font-size: 18px;
               height: fit-content;
             }
   
@@ -1113,8 +1123,8 @@ h6 {
   
               .project-tech {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 10px;
+                grid-template-columns: 1fr 1fr;
+                gap: 5px;
                 padding-inline: 0;
                 margin-top: 20px;
               }
@@ -1475,7 +1485,7 @@ h6 {
         grid-template-columns: 1fr 1fr;
   
         .project {
-          height: 250px;
+          height: 200px;
           border: 2px solid black;
           box-shadow: 4px 4px 0 0 black;
         }
