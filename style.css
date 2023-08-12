@@ -280,7 +280,7 @@ h6 {
     height: 600px;
     width: 80%;
     background-image: url(images/My\ project-2.png);
-    background-size: cover
+    background-size: cover;
   }
 }
 
@@ -338,76 +338,76 @@ h6 {
           aspect-ratio: 1;
           border-radius: 10px;
           margin: auto;
-  
+
           > .skill-logo {
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-  
+
             > img {
               height: 85%;
               width: 85%;
             }
           }
-  
+
           > .html {
             background-color: #f79540;
           }
-  
+
           > .css {
             background-color: var(--blue);
           }
-  
+
           > .react {
             background-color: #00d8ff;
           }
-  
+
           > .next {
             background-color: white;
           }
-  
+
           > .redux {
             background-color: #764abc;
           }
-  
+
           > .astro {
             background-color: #f97b22;
           }
-  
+
           > .javascript {
             background-color: #f0db4f;
           }
-  
+
           > .tailwind {
             background-color: #06b6d4;
           }
-  
+
           > .bootstrap {
             background-color: #7952b3;
           }
-  
+
           > .sql {
             background-color: #00546b;
           }
-  
+
           > .mongodb {
             background-color: #01ec64;
           }
-  
+
           > .git {
             background-color: #de4c36;
           }
-  
+
           > .bitbucket {
             background-color: white;
           }
-  
+
           > .node {
             background-color: #8cc84b;
           }
-  
+
           /* > .skill-title {
             height: 20%;
             display: flex;
@@ -487,10 +487,9 @@ h6 {
         }
 
         .content {
-
           > ul {
             width: 93%;
-            float:right;
+            float: right;
             margin-right: 20px;
             display: flex;
             flex-direction: column;
@@ -683,7 +682,9 @@ h6 {
           outline: none;
           transition: all 0.2s;
 
-          &:hover, &:active, &:focus {
+          &:hover,
+          &:active,
+          &:focus {
             border: 2px solid var(--light-orange);
             box-shadow: 5px 5px 0 0 var(--light-yellow);
             transform: translateY(-5px);
@@ -701,7 +702,9 @@ h6 {
           outline: none;
           transition: all 0.2s;
 
-          &:hover, &:active, &:focus {
+          &:hover,
+          &:active,
+          &:focus {
             border: 2px solid var(--light-orange);
             box-shadow: 5px 5px 0 0 var(--light-yellow);
             transform: translateY(-5px);
@@ -732,6 +735,17 @@ h6 {
       }
     }
   }
+}
+
+#footer {
+  border-bottom: 3px solid black;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-orange);
+  letter-spacing: 2px;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -935,29 +949,29 @@ h6 {
   #skills {
     height: fit-content;
     border-bottom: 2px solid black;
-  
+
     > .skills-main {
       height: fit-content;
       width: 99%;
       gap: 20px;
       padding-block: 30px;
       padding-inline: 12px;
-  
+
       > .title {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-  
+
         > .skills-title {
           font-size: 35px;
         }
-  
+
         > .skills-subtitle {
           font-size: 12px;
         }
       }
-  
+
       > .skills-container {
         height: fit-content;
         width: 95%;
@@ -967,7 +981,7 @@ h6 {
         border: 2px solid black;
         border-radius: 20px;
         box-shadow: 4px 4px 0 0 black;
-  
+
         .skillset {
           padding: 5px;
           width: 90%;
@@ -977,11 +991,11 @@ h6 {
             max-width: 70px;
             aspect-ratio: 1;
             border-radius: 10px;
-    
+
             > .skill-logo {
               width: 100%;
               height: 100%;
-    
+
               > img {
                 height: 80%;
                 width: 80%;
@@ -996,19 +1010,19 @@ h6 {
   #work {
     border-bottom: 2px solid black;
     height: fit-content;
-  
+
     .work-main {
       height: fit-content;
       width: 99%;
       gap: 20px;
       padding-block: 30px;
       padding-inline: 12px;
-  
+
       .work-title {
         font-size: 35px;
         text-align: center;
       }
-  
+
       .exp-main {
         display: flex;
         height: 100%;
@@ -1017,38 +1031,38 @@ h6 {
         justify-content: flex-start;
         gap: 20px;
         padding: 5px;
-  
+
         .company-container {
           width: 100%;
           height: fit-content;
           padding: 20px;
           border: 2px solid black;
           gap: 20px;
-  
+
           .header {
             gap: 20px;
-  
+
             .logo {
               height: auto;
               width: 50%;
               max-width: 80px;
-  
+
               .logo-img {
                 height: 80%;
               }
             }
-  
+
             .heading {
               .role {
                 font-size: 14px;
               }
-  
+
               .company {
                 font-size: 20px;
               }
             }
           }
-  
+
           .content {
             font-size: 12px;
 
@@ -1065,7 +1079,7 @@ h6 {
           background-color: var(--light-yellow);
           box-shadow: -10px 10px 0 0 var(--blue);
           transform: translateY(-5px) translateX(5px);
-  
+
           .logo {
             background-color: white;
             box-shadow: -4px 4px 0 0 var(--light-orange);
@@ -1079,19 +1093,19 @@ h6 {
   #projects {
     border-bottom: 2px solid black;
     height: fit-content;
-  
+
     .projects-main {
       height: fit-content;
       width: 99%;
       gap: 20px;
       padding-block: 30px;
       padding-inline: 12px;
-  
+
       .projects-title {
         font-size: 32px;
         text-align: center;
       }
-  
+
       .projects-container {
         width: 100%;
         height: 100%;
@@ -1099,11 +1113,11 @@ h6 {
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 5px;
-  
+
         .project {
           height: 220px;
           border: 2px solid black;
-  
+
           .project-content {
             border-top: 2px solid black;
             height: 20%;
@@ -1111,17 +1125,17 @@ h6 {
             padding: 5px 15px;
             gap: 20px;
             transition: all 0.5s;
-  
+
             .project-title {
               font-size: 18px;
               height: fit-content;
             }
-  
+
             .project-hidden {
               display: none;
               height: fit-content;
               font-size: 12px;
-  
+
               .project-tech {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -1131,7 +1145,7 @@ h6 {
               }
             }
           }
-  
+
           .project-content:hover {
             border: none;
             height: 100%;
@@ -1142,7 +1156,7 @@ h6 {
           transform: translateY(-5px);
           box-shadow: 4px 4px 0 0 black;
         }
-  
+
         .project:hover {
           box-shadow: 4px 4px 0 0 black;
         }
@@ -1153,7 +1167,7 @@ h6 {
   #contact {
     border-bottom: 2px solid black;
     height: fit-content;
-  
+
     .contact-main {
       height: fit-content;
       width: 99%;
@@ -1162,20 +1176,20 @@ h6 {
       gap: 40px;
       padding-block: 30px;
       padding-inline: 12px;
-  
+
       .contact-left {
         width: 100%;
         flex-direction: column;
         gap: 20px;
-  
+
         .title {
           font-size: 35px;
         }
-  
+
         .desc {
           font-size: 16px;
         }
-  
+
         .socials {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -1183,7 +1197,7 @@ h6 {
           gap: 5px;
           max-width: 300px;
           padding-block: 5px;
-  
+
           .social {
             height: 35px;
             aspect-ratio: 1;
@@ -1191,7 +1205,7 @@ h6 {
             padding: 5px;
             margin: auto;
             transition: all 0.2s;
-  
+
             &:hover {
               background-color: var(--blue);
               transform: translateY(-5px);
@@ -1201,7 +1215,7 @@ h6 {
       }
       .contact-right {
         width: 100%;
-  
+
         .contact-form {
           height: fit-content;
           width: 100%;
@@ -1210,7 +1224,7 @@ h6 {
           justify-content: flex-start;
           gap: 20px;
           padding: 5px;
-  
+
           .row-field {
             height: 40px;
             background-color: transparent;
@@ -1218,14 +1232,15 @@ h6 {
             padding-inline: 10px;
             font-size: 14px;
             outline: none;
-  
-            &:hover, &:active {
+
+            &:hover,
+            &:active {
               border: 2px solid var(--light-orange);
               box-shadow: 4px 4px 0 0 var(--light-yellow);
               transform: translateY(-2px);
             }
           }
-  
+
           .msg-field {
             background-color: transparent;
             border: 2px solid black;
@@ -1233,14 +1248,14 @@ h6 {
             resize: none;
             font-size: 14px;
             outline: none;
-  
+
             &:hover {
               border: 2px solid var(--light-orange);
               box-shadow: 4px 4px 0 0 var(--light-yellow);
               transform: translateY(-2px);
             }
           }
-  
+
           .msg-btn {
             height: 40px;
             padding-inline: 20px;
@@ -1249,11 +1264,11 @@ h6 {
             box-shadow: 3px 3px 0px 0px black;
             font-size: 16px;
           }
-  
+
           .msg-btn:active {
             transform: translateY(2px) translateX(2px);
           }
-  
+
           .msg-btn:hover {
             background-color: var(--light-orange);
             box-shadow: 3px 3px 0px 0px black;
@@ -1261,6 +1276,15 @@ h6 {
         }
       }
     }
+  }
+
+  #footer {
+    border-bottom: 2px solid black;
+    height: fit-content;
+    padding-block: 5px;
+    padding-inline: 12px;
+    font-size: 9px;
+    letter-spacing: 1px;
   }
 }
 
@@ -1400,17 +1424,16 @@ h6 {
   }
 
   #skills {
-  
     > .skills-main {
       width: 90%;
       max-width: 800px;
       gap: 20px;
-  
+
       > .skills-container {
         height: fit-content;
         width: 95%;
         grid-template-columns: 1fr 1fr;
-  
+
         .skillset {
           > .skill {
             max-width: 75px;
@@ -1422,38 +1445,37 @@ h6 {
   }
 
   #work {
-
     .work-main {
       gap: 40px;
-  
+
       .exp-main {
         width: 70%;
         max-width: 800px;
         gap: 40px;
-  
+
         .company-container {
           width: 100%;
           height: fit-content;
           padding: 40px 30px;
-  
+
           .header {
             gap: 20px;
-  
+
             .logo {
               max-width: 90px;
             }
-  
+
             .heading {
               .role {
                 font-size: 18px;
               }
-  
+
               .company {
                 font-size: 24px;
               }
             }
           }
-  
+
           .content {
             font-size: 14px;
           }
@@ -1463,7 +1485,7 @@ h6 {
           background-color: var(--light-yellow);
           box-shadow: -10px 10px 0 0 var(--blue);
           transform: translateY(-5px) translateX(5px);
-  
+
           .logo {
             background-color: white;
             box-shadow: -4px 4px 0 0 var(--light-orange);
@@ -1477,14 +1499,14 @@ h6 {
   #projects {
     border-bottom: 2px solid black;
     height: fit-content;
-  
+
     .projects-main {
       height: fit-content;
       width: 90%;
-  
+
       .projects-container {
         grid-template-columns: 1fr 1fr;
-  
+
         .project {
           height: 200px;
           border: 2px solid black;
@@ -1499,17 +1521,16 @@ h6 {
   }
 
   #contact {
-  
     .contact-main {
       height: fit-content;
       width: 80%;
-  
+
       .contact-left {
         width: 90%;
       }
       .contact-right {
         width: 80%;
-  
+
         .contact-form {
           height: fit-content;
           width: 100%;
@@ -1518,7 +1539,7 @@ h6 {
           justify-content: flex-start;
           gap: 20px;
           padding: 5px;
-  
+
           .row-field {
             height: 40px;
             background-color: transparent;
@@ -1526,14 +1547,15 @@ h6 {
             padding-inline: 10px;
             font-size: 14px;
             outline: none;
-  
-            &:hover, &:active {
+
+            &:hover,
+            &:active {
               border: 2px solid var(--light-orange);
               box-shadow: 4px 4px 0 0 var(--light-yellow);
               transform: translateY(-2px);
             }
           }
-  
+
           .msg-field {
             background-color: transparent;
             border: 2px solid black;
@@ -1541,14 +1563,14 @@ h6 {
             resize: none;
             font-size: 14px;
             outline: none;
-  
+
             &:hover {
               border: 2px solid var(--light-orange);
               box-shadow: 4px 4px 0 0 var(--light-yellow);
               transform: translateY(-2px);
             }
           }
-  
+
           .msg-btn {
             height: 40px;
             padding-inline: 20px;
@@ -1557,11 +1579,11 @@ h6 {
             box-shadow: 3px 3px 0px 0px black;
             font-size: 16px;
           }
-  
+
           .msg-btn:active {
             transform: translateY(2px) translateX(2px);
           }
-  
+
           .msg-btn:hover {
             background-color: var(--light-orange);
             box-shadow: 3px 3px 0px 0px black;
@@ -1569,6 +1591,11 @@ h6 {
         }
       }
     }
+  }
+
+  #footer {
+    font-size: 12px;
+    padding-block: 10px;
   }
 }
 
@@ -1583,4 +1610,3 @@ h6 {
     transform: rotateY(360deg) translateY(0px);
   }
 }
-
