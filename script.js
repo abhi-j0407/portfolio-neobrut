@@ -29,7 +29,6 @@ const letters = "abcdefghijklmnopqrstuvwxyz";
 let interval = null;
 
 const hackElements = document.getElementsByClassName('hacker-text');
-console.log(hackElements)
 
 const hackerFunc = event => {  
   let iteration = 0;
