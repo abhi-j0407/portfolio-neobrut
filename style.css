@@ -74,18 +74,27 @@ h6 {
 
 .main {
   border: 3px solid black;
+  border-top: none;
   font-family: "Public Sans", sans-serif;
   background-color: var(--light-beige);
   max-width: 1920px;
   margin: auto;
+  overflow: hidden;
 }
 
 .navbar {
   display: flex;
-  border-bottom: 3px solid black;
+  border: 3px solid black;
+  background-color: var(--light-beige);
   height: 50px;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: calc(100% - 2.5px);
+  max-width: 1917px;
+  z-index: 9;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
 
   > .logo {
     text-decoration: none;
@@ -160,11 +169,16 @@ h6 {
   .cv-btn:hover {
     background-color: var(--dark-orange);
   }
+
+  &.show {
+    transform: translateY(0);
+  }
 }
 
 #hero {
   height: 850px;
   display: flex;
+  margin-top: 50px;
 
   > .left {
     width: 50%;
@@ -173,6 +187,8 @@ h6 {
     justify-content: center;
     align-items: center;
     margin-inline: 50px;
+    transform: translateX(-100%);
+    transition: all 1s ease-in-out;
 
     .left-text {
       > p {
@@ -185,6 +201,9 @@ h6 {
         font-size: 85px;
         line-height: 1.25;
         margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
       }
 
       > .hero-sub {
@@ -224,6 +243,12 @@ h6 {
         height: 100%;
         animation: rotation 6s linear infinite;
       }
+    }
+  }
+
+  &.highlight {
+    .left {
+      transform: translateX(0);
     }
   }
 }

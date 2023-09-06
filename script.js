@@ -1,6 +1,7 @@
 // Intersectional observer
 const workEx = document.querySelectorAll('.company-container')
 const projects = document.querySelectorAll('.project')
+const hero = document.querySelector('#hero')
 
 const observer = new IntersectionObserver(
     entries => {
@@ -9,7 +10,7 @@ const observer = new IntersectionObserver(
         })
     },
     {
-        threshold:0.9
+        threshold:0.5
     }
 )
 
@@ -20,6 +21,8 @@ workEx.forEach(workExp => {
 projects.forEach(project => {
     observer.observe(project)
 })
+
+observer.observe(hero)
 
 
 
@@ -56,5 +59,34 @@ const hackerFunc = event => {
 }
 
 Array.from(hackElements).forEach(element => {
+  element.onload = hackerFunc;
+  element.onload = () => {console.log("TTTT")}
+});
+
+Array.from(hackElements).forEach(element => {
     element.addEventListener('mouseover', hackerFunc);
+});
+
+// Show nav on scroll
+
+// Shows on page load
+document.querySelector('.navbar').classList.add('show');
+
+// keep track of previous scroll position
+let prevScrollPos = window.scrollY;
+
+window.addEventListener('scroll', function() {
+  // current scroll position
+  const currentScrollPos = window.scrollY;
+
+  if (prevScrollPos > currentScrollPos) {
+    // user has scrolled up
+    document.querySelector('.navbar').classList.add('show');
+  } else {
+    // user has scrolled down
+    document.querySelector('.navbar').classList.remove('show');
+  }
+
+  // update previous scroll position
+  prevScrollPos = currentScrollPos;
 });
