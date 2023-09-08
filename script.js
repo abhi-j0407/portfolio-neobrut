@@ -1,7 +1,7 @@
 // Intersectional observer
 const workEx = document.querySelectorAll('.company-container')
 const projects = document.querySelectorAll('.project')
-const hero = document.querySelector('#hero')
+const sections = document.querySelectorAll('.section')
 
 const observer = new IntersectionObserver(
     entries => {
@@ -22,7 +22,9 @@ projects.forEach(project => {
     observer.observe(project)
 })
 
-observer.observe(hero)
+sections.forEach(section => {
+  observer.observe(section)
+})
 
 
 
@@ -57,11 +59,6 @@ const hackerFunc = event => {
     iteration += 1 / 3;
   }, 30);
 }
-
-Array.from(hackElements).forEach(element => {
-  element.onload = hackerFunc;
-  element.onload = () => {console.log("TTTT")}
-});
 
 Array.from(hackElements).forEach(element => {
     element.addEventListener('mouseover', hackerFunc);
