@@ -382,10 +382,14 @@ h6 {
 
       > .skills-title {
         font-size: 50px;
+        scale: 0;
+        transition: scale 0.5s ease-in-out;
       }
 
       > .skills-subtitle {
         font-size: 14px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out 0.25s;
       }
     }
 
@@ -399,6 +403,8 @@ h6 {
       border-radius: 40px;
       box-shadow: 10px 10px 0 0 black;
       justify-content: center;
+      scale: 0;
+      transition: scale 0.5s ease-in-out;
 
       .skillset {
         display: flex;
@@ -413,6 +419,8 @@ h6 {
           aspect-ratio: 1;
           border-radius: 10px;
           margin: auto;
+          scale: 0;
+          transition: scale 0.5s ease-in-out 0.25s;
 
           > .skill-logo {
             width: 100%;
@@ -482,14 +490,36 @@ h6 {
           > .node {
             background-color: #8cc84b;
           }
+        }
 
-          /* > .skill-title {
-            height: 20%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: var(--blue);
-          } */
+        .skill:nth-child(2) {
+          transition-delay: 0.5s;
+        }
+        .skill:nth-child(3) {
+          transition-delay: 0.75s;
+        }
+      }
+    }
+  }
+
+  &.highlight {
+    .skills-main {
+      .title {
+        .skills-title {
+          scale: 1;
+        }
+        .skills-subtitle {
+          opacity: 1;
+        }
+      }
+
+      .skills-container {
+        scale: 1;
+
+        .skillset {
+          .skill {
+            scale: 1;
+          }
         }
       }
     }
@@ -513,6 +543,8 @@ h6 {
 
     .work-title {
       font-size: 45px;
+      scale: 0;
+      transition: scale 0.5s ease-in-out;
     }
 
     .exp-main {
@@ -529,7 +561,8 @@ h6 {
         gap: 10%;
         padding: 20px;
         border: 3px solid black;
-        transition: all 0.2s;
+        scale: 0;
+        transition: all 0.25s;
 
         .header {
           display: flex;
@@ -542,7 +575,7 @@ h6 {
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: all 0.2s;
+            transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s, scale 0.5s;
 
             .logo-img {
               aspect-ratio: 1;
@@ -586,6 +619,20 @@ h6 {
       }
     }
   }
+
+  &.highlight {
+    .work-main {
+      .work-title {
+        scale: 1;
+      }
+
+      .exp-main {
+        .company-container {
+          scale: 1;
+        }
+      }
+    }
+  }
 }
 
 #projects {
@@ -605,6 +652,8 @@ h6 {
 
     .projects-title {
       font-size: 45px;
+      scale: 0;
+      transition: scale 0.5s ease-in-out;
     }
 
     .projects-container {
@@ -620,7 +669,8 @@ h6 {
         height: 350px;
         flex-direction: column;
         position: relative;
-        transition: all 0.2s;
+        scale: 0;
+        transition: scale 0.25s ease-in-out, transform 0.25s, box-shadow 0.25s;
 
         .project-img-container {
           height: 100%;
@@ -675,11 +725,33 @@ h6 {
             display: block;
           }
         }
+
+        &:nth-child(2) {
+          transition: scale 0.25s ease-in-out 0.25s, transform 0.25s, box-shadow 0.25s;
+        }
+        
+        &:nth-child(3) {
+          transition: scale 0.25s ease-in-out 0.5s, transform 0.25s, box-shadow 0.25s;
+        }
       }
 
       .project:hover {
         transform: translateY(-5px);
         box-shadow: 10px 10px 0 0 black;
+      }
+    }
+  }
+
+  &.highlight {
+    .projects-main {
+      .projects-title {
+        scale: 1;
+      }
+
+      .projects-container {
+        .project {
+          scale: 1;
+        }
       }
     }
   }
@@ -707,10 +779,14 @@ h6 {
 
       .title {
         font-size: 50px;
+        transform: translateX(-200%);
+        transition: transform 0.5s ease-in-out;
       }
 
       .desc {
         font-size: 20px;
+        transform: translateX(-200%);
+        transition: transform 0.5s ease-in-out 0.25s;
       }
 
       .socials {
@@ -724,12 +800,33 @@ h6 {
           box-shadow: 3px 3px 0 0 black;
           border-radius: 50%;
           padding: 10px;
-          transition: all 0.2s;
+          scale: 0;
+          transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s, scale 0.5s ease-in-out 0.5s;
 
           &:hover {
             background-color: var(--dark-orange);
             box-shadow: 5px 5px 0 0 black;
             transform: translateY(-5px);
+          }
+
+          &:nth-child(2) {
+            transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s, scale 0.5s ease-in-out 0.65s;
+          }
+
+          &:nth-child(3) {
+            transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s, scale 0.5s ease-in-out 0.8s;
+          }
+
+          &:nth-child(4) {
+            transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s, scale 0.5s ease-in-out 0.95s;
+          }
+
+          &:nth-child(5) {
+            transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s, scale 0.5s ease-in-out 1.1s;
+          }
+
+          &:nth-child(6) {
+            transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s, scale 0.5s ease-in-out 1.25s;
           }
         }
       }
@@ -755,7 +852,8 @@ h6 {
           padding-inline: 20px;
           font-size: 16px;
           outline: none;
-          transition: all 0.2s;
+          scale: 0;
+          transition: border 0.2s, box-shadow 0.2s, transform 0.2s, scale 0.5s ease-in-out;
 
           &:hover,
           &:active,
@@ -775,7 +873,8 @@ h6 {
           resize: none;
           font-size: 16px;
           outline: none;
-          transition: all 0.2s;
+          scale: 0;
+          transition: border 0.2s, box-shadow 0.2s, transform 0.2s, scale 0.5s ease-in-out 0.2s;
 
           &:hover,
           &:active,
@@ -796,7 +895,8 @@ h6 {
           font-size: 18px;
           background-color: var(--light-orange);
           color: white;
-          transition: all 0.2s;
+          scale: 0;
+          transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s, scale 0.5s ease-in-out 0.4s;
         }
 
         .msg-btn:active {
@@ -806,6 +906,42 @@ h6 {
 
         .msg-btn:hover {
           background-color: var(--dark-orange);
+        }
+      }
+    }
+  }
+
+  &.highlight {
+    .contact-main {
+      .contact-left {
+        .title {
+          transform: translateX(0);
+        }
+
+        .desc {
+          transform: translateX(0);
+        }
+
+        .socials {
+          .social {
+            scale: 1;
+          }
+        }
+      }
+
+      .contact-right {
+        .contact-form {
+          .row-field {
+            scale: 1;
+          }
+
+          .msg-field {
+            scale: 1;
+          }
+
+          .msg-btn {
+            scale: 1;
+          }
         }
       }
     }
