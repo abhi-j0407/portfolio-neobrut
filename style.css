@@ -85,6 +85,7 @@ h6 {
 .navbar {
   display: flex;
   border: 3px solid black;
+  border-left: none;
   background-color: var(--light-beige);
   height: 50px;
   justify-content: space-between;
@@ -97,22 +98,33 @@ h6 {
   transition: transform 0.3s ease-in-out;
 
   > .logo {
-    text-decoration: none;
+    /* text-decoration: none;
     color: inherit;
     font-size: 28px;
     font-weight: 600;
     padding: 20px;
     align-self: center;
     border-right: 3px solid black;
-    height: 100%;
+    height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--blue);
+    height: 100%;
+    padding-inline: 12px 0;
+    padding-top: 2px;
+    border-right: 3px solid black;
+
+    > svg {
+      height: 100%;
+      > g {
+        transition: fill 0.2s ease-in-out;
+      }
+    }
   }
 
-  > .logo:hover {
-    color: white;
+  > .logo:hover svg g {
+    fill: white;
   }
 
   .nav-right {
@@ -326,7 +338,7 @@ h6 {
       border: 3px solid black;
       height: 600px;
       width: 80%;
-      background-image: url(images/My\ project-2.png);
+      background-image: url(images/photo.png);
       background-size: cover;
       transform: translateY(-150%);
       transition: transform 1s ease-in-out;
@@ -976,16 +988,16 @@ h6 {
     align-items: center;
 
     > .logo {
-      text-decoration: none;
+      /* text-decoration: none;
       color: inherit;
       font-size: 18px;
       font-weight: 600;
       padding-inline: 14px;
-      padding-block: 10px;
-      line-height: 1.2;
-      align-self: center;
+      padding-block: 10px; */
+      /* line-height: 1.2; */
+      /* align-self: center; */
       border-right: 2px solid black;
-      height: 100%;
+      height: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
