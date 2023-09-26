@@ -745,6 +745,18 @@ h6 {
         &:nth-child(3) {
           transition: scale 0.25s ease-in-out 0.5s, transform 0.25s, box-shadow 0.25s;
         }
+
+        &:nth-child(4) {
+          transition: scale 0.25s ease-in-out 0.75s, transform 0.25s, box-shadow 0.25s;
+        }
+
+        &:nth-child(5) {
+          transition: scale 0.25s ease-in-out 1s, transform 0.25s, box-shadow 0.25s;
+        }
+
+        &:nth-child(6) {
+          transition: scale 0.25s ease-in-out 1.25s, transform 0.25s, box-shadow 0.25s;
+        }
       }
 
       .project:hover {
